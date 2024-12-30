@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <floating-chat-widget
+            socialAgents='[
+              {"platform": "WhatsApp", "icon": "📞", "url": "https://wa.me/1234567890"},
+              {"platform": "Facebook", "icon": "📘", "url": "https://facebook.com/yourpage"},
+              {"platform": "Instagram", "icon": "📸", "url": "https://instagram.com/yourpage"},
+              {"platform": "Twitter", "icon": "🐦", "url": "https://twitter.com/yourpage"},
+              {"platform": "LinkedIn", "icon": "👔", "url": "https://linkedin.com/yourpage"}
+            ]'
+    ></floating-chat-widget>
+    <script type="module" src="./dist/floating-chat-widget.js"></script>
+  </body>
+</html>
+
