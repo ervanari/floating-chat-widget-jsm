@@ -4,21 +4,25 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="./src/widgetElement.jsx"></script>
+    <link rel="stylesheet" href="./src/index.css" />
+<!--    <script type="module" src="./dist/floating-chat-widget.js"></script>-->
+<!--    <link rel="stylesheet" href="./dist/floating-chat-widget.css" />-->
+    <script type="text/javascript" src="https://wchat.freshchat.com/js/widget.js"></script>
     <title>Vite + React</title>
   </head>
   <body>
     <div id="root"></div>
 
     <floating-chat-widget
-            socialAgents='[
-              {"platform": "WhatsApp", "icon": "📞", "url": "https://wa.me/1234567890"},
-              {"platform": "Facebook", "icon": "📘", "url": "https://facebook.com/yourpage"},
-              {"platform": "Instagram", "icon": "📸", "url": "https://instagram.com/yourpage"},
-              {"platform": "Twitter", "icon": "🐦", "url": "https://twitter.com/yourpage"},
-              {"platform": "LinkedIn", "icon": "👔", "url": "https://linkedin.com/yourpage"}
-            ]'
+      socialAgents='[
+        { "label": "WhatsApp", "icon": "https://img.icons8.com/3d-fluency/94/whatsapp.png", "url": "https://api.whatsapp.com/send?phone=628973856130" },
+        { "label": "Chat Bot", "icon": "https://img.icons8.com/3d-fluency/94/communication.png", "url": "" },
+        { "label": "Voice Bot", "icon": "https://img.icons8.com/3d-fluency/94/chatbot.png", "url": "https://108.143.51.70/app" },
+        { "label": "Video Call", "icon": "https://img.icons8.com/3d-fluency/94/video-message.png", "url": "https://vcall-chat.mala-widiyanto.workers.dev/set-username" }
+      ]'
     ></floating-chat-widget>
-    <script type="module" src="./dist/floating-chat-widget.js"></script>
+
   </body>
 </html>
 
